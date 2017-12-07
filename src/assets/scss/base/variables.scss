@@ -18,15 +18,17 @@ $font-body: 'Open Sans', sans-serif;
 $font-heading: "Francois One", sans-serif;
 $font-monospace: Menlo, Monaco, monospace;
 
-// Breakpoints
-$bp-xs: 20em; // to pixels = #em x 16(default body font-size) or, 20x16=320px
-$bp-sm: 30em; //480
-$bp-md: 53.125em; //850
-$bp-lg: 60em; //960
-$bp-xl: 80em; //1280
+// Breakpoints, using rems
+// #size % 16(default body font-size) == xrem (or, 320%16 ==20)
+$bp-xs: 20rem; //320
+$bp-sm: 30rem; //480
+$bp-md: 50rem; //800
+$bp-lg: 62.4375em; //999
+$bp-xl: 80rem; //1280
 
-// Sizing
-$font-size-body: 100%; //relative (ex: 100%); changing variable will adjust scale of site
+// Sizings
+$font-size-body: rem(16);
+// Relative sizings if needed to resize body
 $font-size-xl: 120%;
 $font-size-lg: 110%;
 $font-size-sm: 90%;

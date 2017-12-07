@@ -1,19 +1,19 @@
 // MIXINS
 
-// Strip units from values
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+// Convert PX to REM
+// Usage: 
+// .class {font-size: rem(20)};
+$baseFontSize : 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
 }
-// Calculate ems from pixels
-// Usage: margin-top: calc-em(60px);
-@function calc-em($px, $base: 16) {
-	$px: strip-unit($px);
-	$base: strip-unit($base);
-	@if $px == 1 {
-		@return 1px;
-	}
-	@return ($px / $base) * 1em;
-}
+
 
 // Media query breakpoints
 // Usage:  @include breakpoint(sm) { width: 100%; }
