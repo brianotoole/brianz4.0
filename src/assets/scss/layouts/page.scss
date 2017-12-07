@@ -1,0 +1,26 @@
+// PAGE 
+// Major page structure + classes
+
+// Section 
+.section {}
+
+.section-wrap {
+   padding: 60px 0;
+}
+
+.section-header {
+   position: relative;
+   padding: 150px 0;
+   z-index: 1;
+   //animation: fadeIn 0.2s linear;
+   > * {
+     z-index: 2;
+   }
+}
+.section-title {}
+.section-subtitle {}
+
+// Page
+.page-home {}
+
+.page-about {}
