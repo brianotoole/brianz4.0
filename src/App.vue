@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div id="app" v-bind:class="{ navopen: toggleNav }">
 
 <header class="header">
   <div class="row">
@@ -10,6 +10,11 @@
      <li v-for="nav in navs">
       <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
      </li>
+     <div class="nav-toggle row end-xs middle-xs" @click="toggleNav = !toggleNav" v-bind:class="{ active: toggleNav }">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+     </div><!--/.nav-toggle-->
     </div><!--/.col-->
   </div><!--/.row-->
 </header>
@@ -29,10 +34,13 @@ export default {
         {link: '', title: 'Home' },
         {link: 'users/:1', title: 'About' },
         {link: 'contact', title: 'Contact' }
-      ]
+      ],
+      toggleNav: false
     }
   },
-  methods: {}
+  methods: {
+
+  }
 }
 </script>
 
