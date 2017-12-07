@@ -1,14 +1,15 @@
 <template>
 <div>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">Users</h1>
-        <h2 class="subtitle"><strong>User Id:</strong> {{ $route.params.userId }}</h2>
-        <button @click="goHome">Back to Homepage</button>
+
+  <div class="wrapper container-fluid">
+    <div class="flex-wrap">
+      <div class="column">
+        <h1 class="page-title">About</h1>
+        <p>fjdsakjfskdljfd</p>
       </div>
     </div>
-  </section>
+  </div>
+
 </div>
 </template>
 

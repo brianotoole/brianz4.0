@@ -2,13 +2,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 import App from './App.vue'
 import Home from './Home.vue';
-import Users from './Users.vue';
+import Users from './About.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {path: '/', component: Home},
-  {path: '/users/:userId', component: Users}
+  {path: '/about', component: Users}
 ]
 
 const router = new VueRouter({

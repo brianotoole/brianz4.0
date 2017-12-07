@@ -31,7 +31,7 @@
   </div><!--/.col-->
 </div><!--/.nav-mobile-->
 
-  <router-view></router-view>
+<router-view></router-view>
 
 </div><!--/.app-->
 </template>
@@ -44,7 +44,7 @@ export default {
       site: 'Brian',
       navs: [
         {link: '', title: 'Home' },
-        {link: 'users/:1', title: 'About' },
+        {link: 'about', title: 'About' },
         {link: 'contact', title: 'Contact' }
       ],
       toggleNav: false
