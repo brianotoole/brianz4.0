@@ -1,16 +1,18 @@
 <template>
-  <div id="app">
+<div id="app">
 
-    <nav class="nav">
-      <div class="nav-left">
-        <router-link to="/" class="nav-item logo">LOGO</router-link>
-      </div><!--/.nav-left-->
-      <div class="nav-right">
-        <router-link to="/" class="nav-item is-tab is-hidden-mobile">Home</router-link>
-        <router-link to="/users/:1" class="nav-item is-tab is-hidden-mobile">Users 1</router-link>
-        <router-link to="/users/:2" class="nav-item is-tab is-hidden-mobile">Users 2</router-link>
-      </div><!--/.nav-right-->
-    </nav>
+<header class="header">
+  <div class="row">
+    <div class="col-xs-6 logo">
+      <router-link to="/" class="nav-item logo">{{site}}</router-link>
+    </div><!--/.col-->
+    <div class="col-xs-6 nav-primary">
+     <li v-for="nav in navs">
+      <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
+     </li>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</header>
 
   <router-view></router-view>
 
@@ -22,8 +24,15 @@ export default {
   //name: 'app',
   data () {
     return {
+      site: 'Brian',
+      navs: [
+        {link: '', title: 'Home' },
+        {link: 'users/:1', title: 'About' },
+        {link: 'contact', title: 'Contact' }
+      ]
     }
-  }
+  },
+  methods: {}
 }
 </script>
 
