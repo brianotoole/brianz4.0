@@ -31,6 +31,9 @@
   </div><!--/.col-->
 </div><!--/.nav-mobile-->
 
+<div id="tween"></div>
+<button @click="tweenTest">Click</button>
+
 <router-view></router-view>
 
 </div><!--/.app-->
@@ -51,8 +54,11 @@ export default {
     }
   },
   methods: {
-
+    tweenTest:function(){
+      //TweenMax.from('#tween',1,{x:1000});
+    }
   }
+
 }
 </script>
 

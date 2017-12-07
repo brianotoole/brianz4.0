@@ -1,6 +1,8 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import VueRouter from 'vue-router';
-import App from './App.vue'
+import { TimelineMax } from 'gsap';
+
+import App from './App.vue';
 import Home from './Home.vue';
 import Users from './About.vue';
 
