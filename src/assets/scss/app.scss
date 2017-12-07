@@ -1,18 +1,6 @@
-// IMPORTS
-@import 'mixins';
-@import 'grid';
+// TABLE OF CONTENTS FOR SITE
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/reboot';
+//@import 'grid';
 
-// VARIABLES
-$primary: #ccc;
-$secondary: #307fe2;
-$black: #222;
-$white: #fff;
-
-// GLOBALS
-body {
-  background: $primary;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}

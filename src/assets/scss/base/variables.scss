@@ -1,0 +1,37 @@
+// VARIABLES
+
+// Colors: branding
+$color-primary: #275cea; // dodger blue
+$color-secondary:  #fff8e8; // peach gold
+
+// Colors: others
+$color-body: #111; 
+$color-white: #fff; 
+$color-black: #000;
+
+// Colors: components
+$color-link: darken($color-primary, 5%);
+$color-link-hover: darken($color-primary, 15%);
+
+// Font Stacks
+$font-body: 'Open Sans', sans-serif; 
+$font-heading: "Francois One", sans-serif;
+$font-monospace: Menlo, Monaco, monospace;
+
+// Breakpoints
+$bp-xs: 20em; // to pixels = #em x 16(default body font-size) or, 20x16=320px
+$bp-sm: 30em; //480
+$bp-md: 53.125em; //850
+$bp-lg: 60em; //960
+$bp-xl: 80em; //1280
+
+// Sizing
+$font-size-body: 100%; //relative (ex: 100%); changing variable will adjust scale of site
+$font-size-xl: 120%;
+$font-size-lg: 110%;
+$font-size-sm: 90%;
+$font-size-xs: 80%;
+
+// Margins & Pads
+$margin-bottom-headings: 0.5rem;
+$margin-bottom-paragraphs: 1rem;
