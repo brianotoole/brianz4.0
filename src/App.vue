@@ -2,23 +2,25 @@
 <div id="app" v-bind:class="{ navopen: toggleNav }">
 
 <header class="header">
-  <div class="row">
-    <div class="col-xs-6 logo">
-      <router-link to="/" class="nav-item logo"><img src="./assets/img/logo.png"/></router-link>
-    </div><!--/.col-->
-    <div class="col-xs-6 end-xs">
-      <ul class="nav-primary">
-        <li v-for="nav in navs">
-          <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
-        </li>
-      </ul><!--/.nav-primary-->
-      <div class="nav-toggle" @click="toggleNav = !toggleNav" v-bind:class="{ active: toggleNav }">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-     </div><!--/.nav-toggle-->
-     </div><!--/.col-->
-  </div><!--/.row-->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 logo">
+        <router-link to="/" class="nav-item logo">Brian Z. O'Toole</router-link>
+      </div><!--/.col-->
+      <div class="col-xs-6 end-xs">
+        <ul class="nav-primary">
+          <li v-for="nav in navs">
+            <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
+          </li>
+        </ul><!--/.nav-primary-->
+        <div class="nav-toggle" @click="toggleNav = !toggleNav" v-bind:class="{ active: toggleNav }">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+      </div><!--/.nav-toggle-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
 </header>
 
 <div class="nav-mobile row" v-bind:class="{ active: toggleNav }">

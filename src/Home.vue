@@ -3,11 +3,11 @@
 
 <div class="page-home">
 
-<section class="section-wrap section-header full-height vertical-center bg-primary has-overlay">
+<section class="section-wrap section-header vertical-center bg-img-cover has-overlay" style="background-image:url('./src/assets/img/home-bg.jpg');">
   <div class="container">
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-offset-2 col-sm-8 text-center">
-        <h1 class="section-title">Inspired design. Bold solutions. Bottom-line results.</h1>
+    <div class="row text-white">
+      <div class="col-xs-12 col-sm-8">
+        <h1 class="section-title">Making things better. Together.</h1>
         <p class="section-subtitle">I help brands build recognition using creative strategy and modern design.</p>
       </div><!--/.col-->
     </div><!--<!--/.row-->

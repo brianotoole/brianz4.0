@@ -21,6 +21,10 @@
 .section-subtitle {}
 
 // Page
-.page-home {}
+.page-home {
+   .section-header {
+      height: calc(100vh - 200px);
+   }
+}
 
 .page-about {}

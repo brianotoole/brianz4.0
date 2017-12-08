@@ -8,15 +8,23 @@
    max-width: 100%;
    height: auto;
    margin: 0;
-   padding: 30px;
-   background-color: $color-primary;
-   z-index: 2001;
+   padding-top: 30px;
+   padding-bottom: 30px; 
+   background-color: transparent;
+   z-index: 9;
    transform: translateY(0);
-   transition: background 0.2s ease-in;
+   transition: all 0.2s ease-in;
+   &:hover {
+     background: $color-black;
+     .nav-primary a,
+     .logo {
+       color: $color-white;
+     }
+   }
  }
  // Logo
  .logo a {
-   color: white;
+   color: $color-white;
    font-weight: 700;
  }
  .logo img {
