@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <script>
-        //typekit
-          (function(d) {
-            var config = {
-              kitId: 'wnt8jwp',
-              scriptTimeout: 3000,
-              async: true
-            },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-          })(document);
-        </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vue Test</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.js"></script>
-    <script>
-    window.sr = ScrollReveal({ duration: 1000 });
-    sr.reveal('.sr', 200);
+
+<head>
+  <script>
+    //typekit
+    (function (d) {
+      var config = {
+          kitId: 'wnt8jwp',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
   </script>
-  </body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vue Test</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="/dist/build.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.js"></script>
+  <script>
+    var config = {
+      viewFactor: 0.15,
+      duration: 1200,
+      distance: '0px',
+      scale: 1,
+      delay: 200,
+      mobile: false,
+      useDelay: 'onload'
+    }
+    var block = {
+      reset: false,
+      viewOffset: {
+        top: 64
+      }
+    }
+    window.sr = ScrollReveal(config);
+    sr.reveal('.sr', 200);
+    sr.reveal('.sr-block', block);
+    sr.reveal('.sr-default', 200);
+  </script>
+</body>
+
 </html>

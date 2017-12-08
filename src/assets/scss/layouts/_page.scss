@@ -2,12 +2,11 @@
 // Major page structure + classes
 
 // Section 
-.section {
-
-}
+.section {}
 
 .section-wrap {
-   padding: 60px 0;
+   padding-top: 90px;
+   padding-bottom: 90px;
 }
 
 .section-header {
@@ -15,22 +14,44 @@
    padding: 150px 0;
    background-position: left center;
    z-index: 1;
-   //animation: fadeIn 0.2s linear;
    > * {
      z-index: 2;
    }
+   .section-title {
+     animation: fadeIn 0.75s linear;
+   }
 }
-.section-title {}
+.section-title {
+  margin-bottom: 30px;
+}
 .section-subtitle {}
 
+// Section work
+.section-work {
+  .work-title {
+    margin-top: 15px;
+  }
+}
+
 // Page
-.page-home {}
+.page-home {
+  .section-home-about {}
+}
 
 .page-about {}
 
 // Footer
 .footer {
-  width: 60%;
-  margin: auto;
-  position: relative;
+  .container {
+    width: 60%;
+    margin: auto;
+    position: relative;
+  }
+}
+
+// line
+.line {
+  border-bottom: 1px solid $color-body;
+  max-width: 45px;
+  margin: -10px 0 30px;
 }
