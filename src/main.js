@@ -1,14 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 //import { TimelineMax } from 'gsap';
-import VueScrollReveal from 'vue-scroll-reveal';
 
 import App from './App.vue';
 import Home from './Home.vue';
 import Users from './About.vue';
 
 Vue.use(VueRouter);
-Vue.use(VueScrollReveal);
 
 const routes = [
   {path: '/', component: Home},

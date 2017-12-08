@@ -5,12 +5,12 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-3 start-xs logo">
-        <router-link to="/" class="nav-item logo">logo</router-link>
+        <router-link to="/" class="nav-item logo sr">logo</router-link>
       </div><!--/.col-->
       <div class="col-xs-6 center-xs">
         <ul class="nav-primary">
           <li v-for="nav in navs">
-            <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
+            <router-link :to="`/${nav.link}`" class="nav-item sr">{{nav.title}}</router-link>
           </li>
         </ul><!--/.nav-primary-->
         <div class="nav-toggle" @click="toggleNav = !toggleNav" v-bind:class="{ active: toggleNav }">
@@ -20,7 +20,7 @@
       </div><!--/.nav-toggle-->
       </div><!--/.col-->
       <div class="col-xs-3 end-xs hidden-phone">
-        <router-link to="" class="btn transparent">Get in Touch</router-link>
+        <router-link to="" class="btn transparent sr">Get in Touch</router-link>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
@@ -38,7 +38,7 @@
 
 <router-view></router-view>
 
-<footer class="section-wrap footer" v-scroll-reveal.reset>
+<footer class="section-wrap footer">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 end-sm">
@@ -75,6 +75,9 @@ export default {
     tweenTest:function(){
       //TweenMax.from('#tween',1,{x:1000});
     }
+  },
+  mounted: function () {
+    
   }
 
 }
