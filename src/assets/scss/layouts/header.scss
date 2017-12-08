@@ -22,7 +22,7 @@
  .logo img {
    margin: 0;
    width: 100%;
-   max-width: 200px;
+   max-width: 20px;
  }
  // Nav primary
  .nav-primary {
@@ -82,7 +82,7 @@
    opacity: 0;
    visibility: hidden;
    position: fixed;
-   background: lighten($color-black, 9%);
+   background: $color-primary;
    height: 100vh;
    width: 100%;
    top: 0;
@@ -95,7 +95,7 @@
    z-index: 3;
    overflow: hidden;
    transform: translateY(-100%);
-   transition: transform 0.4s, ease-out 0.4s;
+   transition: transform 0.3s, ease-out 0.3s;
    will-change: transform;
    &.active {
      opacity: 1;
@@ -119,10 +119,10 @@
    padding: 0;
    list-style-type: none;
    li {
-     border-bottom: 1px solid $color-white;
-     &:last-child {
-       border-bottom: none;
-     }
+     //border-bottom: 1px solid $color-white;
+     //&:last-child {
+     //  border-bottom: none;
+     //}
    }
    a {
      display: block;
@@ -132,7 +132,7 @@
      font-weight: 700;
      text-align: center;
      text-decoration: none;
-     &:hover,&:focus {background: $color-primary;}
+     &:hover,&:focus {background: transparent;}
    }
  }
  

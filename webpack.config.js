@@ -47,7 +47,11 @@ module.exports = {
     hints: false
   },
   devtool: '#eval-source-map'
-}
+},
+ {
+        test: /\.(jpe?g|png|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
+ }
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'

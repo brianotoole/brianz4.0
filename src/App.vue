@@ -4,7 +4,7 @@
 <header class="header">
   <div class="row">
     <div class="col-xs-6 logo">
-      <router-link to="/" class="nav-item logo">{{site}}</router-link>
+      <router-link to="/" class="nav-item logo"><img src="./assets/img/logo.png"/></router-link>
     </div><!--/.col-->
     <div class="col-xs-6 end-xs">
       <ul class="nav-primary">
@@ -41,7 +41,7 @@ export default {
   //name: 'app',
   data () {
     return {
-      site: 'Brian',
+     //siteName: 'Brian',
       navs: [
         {link: '', title: 'Home' },
         {link: 'about', title: 'About' },
