@@ -38,6 +38,22 @@
 
 <router-view></router-view>
 
+<footer class="section-wrap footer" v-scroll-reveal.reset>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 end-sm">
+        svg here
+      </div><!--/.col-->
+      <div class="col-xs-12 col-sm-6">
+        <h3>Let's Connect</h3>
+        fjdsklfjds
+        fasdfdsaf
+        fasdf
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/./container-->
+</footer>
+
 </div><!--/.app-->
 </template>
 
@@ -62,6 +78,7 @@ export default {
   }
 
 }
+
 </script>
 
 <style lang="sass">

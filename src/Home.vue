@@ -19,10 +19,31 @@
       <div class="col-xs-12 col-sm-7">1</div><!--/.col-->
       <div class="col-xs-12 col-sm-5">
         <h3 class="section-title">Creative technology parters for your brand</h3>
+        <p>We are a full-service creative marketing agency located in Charleston, SC specializing in web design, web development, advertising, content creation, branding, and graphic design. We work with clients all around the globe to improve their business.</p>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/./container-->
 </section>
+
+<section class="section-wrap section-work">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h3 class="section-title">Recent Work</h3>
+      </div><!--/.col-->
+      <div class="col-xs-12 col-sm-4">
+        one
+      </div><!--/.col-->
+      <div class="col-xs-12 col-sm-4">
+        two
+      </div><!--/.col-->
+      <div class="col-xs-12 col-sm-4">
+        three
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/./container-->
+</section>
+
 
 
 </div><!--/.page-home-->

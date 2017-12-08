@@ -7,6 +7,7 @@ $color-secondary:  #fff8e8;
 // Colors: others
 $color-body: #474646; 
 $color-white: #fff; 
+$color-gray: #f5f5f5;
 $color-black: #000;
 
 // Colors: components
@@ -15,7 +16,7 @@ $color-link-hover: darken($color-primary, 15%);
 
 // Font Stacks
 $font-heading: 'arno-pro', serif; //loaded via adobe typekit in header
-$font-body: 'Arsenal', sans-serif; 
+$font-body: 'luxi-sans', sans-serif; //loaded via adobe typekit in header
 $font-monospace: Menlo, Monaco, monospace;
 
 // Breakpoints, using rems
