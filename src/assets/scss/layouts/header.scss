@@ -14,17 +14,10 @@
    z-index: 9;
    transform: translateY(0);
    transition: all 0.2s ease-in;
-   &:hover {
-     background: $color-black;
-     .nav-primary a,
-     .logo {
-       color: $color-white;
-     }
-   }
  }
  // Logo
  .logo a {
-   color: $color-white;
+   color: $color-body;
    font-weight: 700;
  }
  .logo img {
@@ -46,7 +39,7 @@
      flex: 0 0 auto;
      margin: 0 15px;
      padding-bottom: 5px;
-     color: $color-white;
+     color: $color-body;
      font-size: rem(18);
      vertical-align: middle;
      text-decoration: none;
@@ -61,7 +54,7 @@
        left: 50%;
        right: 50%;
        bottom: 0;
-       background: $color-white;
+       background: $color-body;
        height: 2px;
        transition-property: left, right;
        transition-duration: 0.3s;
@@ -90,7 +83,7 @@
    opacity: 0;
    visibility: hidden;
    position: fixed;
-   background: $color-primary;
+   background: $color-white;
    height: 100vh;
    width: 100%;
    top: 0;
@@ -135,7 +128,7 @@
    a {
      display: block;
      padding: 10px 0;
-     color: $color-white;
+     color: $color-primary;
      font-size: rem(20);
      font-weight: 700;
      text-align: center;
@@ -169,7 +162,7 @@
      display: block;
      position: absolute;
      right: 0;
-     background: $color-white;
+     background: $color-body;
      width: $width-line;
      height: $height-line;
      transition: all $transition-time;

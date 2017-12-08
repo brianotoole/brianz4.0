@@ -3,12 +3,13 @@
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $font-heading;
   font-weight: normal;
-  word-wrap: break-word;
+	word-wrap: break-word;
+	letter-spacing: 0.2px
 }
 
 h1,
 .h1 {
-	font-size: rem(62);
+	font-size: rem(58);
 	@media (max-width: $bp-md) {
 	  font-size: rem(34);
 	}

@@ -1,11 +1,11 @@
 // VARIABLES
 
 // Colors: branding
-$color-primary: #275cea; // dodger blue
-$color-secondary:  #fff8e8; // peach gold
+$color-primary: #0f2805;
+$color-secondary:  #fff8e8;
 
 // Colors: others
-$color-body: #111; 
+$color-body: #474646; 
 $color-white: #fff; 
 $color-black: #000;
 
@@ -14,7 +14,7 @@ $color-link: darken($color-primary, 5%);
 $color-link-hover: darken($color-primary, 15%);
 
 // Font Stacks
-$font-heading: 'Jaldi', sans-serif;
+$font-heading: 'arno-pro', serif; //loaded via adobe typekit in header
 $font-body: 'Arsenal', sans-serif; 
 $font-monospace: Menlo, Monaco, monospace;
 

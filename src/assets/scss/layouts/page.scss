@@ -2,7 +2,9 @@
 // Major page structure + classes
 
 // Section 
-.section {}
+.section {
+  
+}
 
 .section-wrap {
    padding: 60px 0;
@@ -22,9 +24,9 @@
 
 // Page
 .page-home {
-   .section-header {
-      height: calc(100vh - 200px);
-   }
+  .section-header {
+    background-position: left center;
+  }
 }
 
 .page-about {}
