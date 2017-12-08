@@ -3,7 +3,7 @@
 
 // Section 
 .section {
-  
+
 }
 
 .section-wrap {
@@ -13,6 +13,7 @@
 .section-header {
    position: relative;
    padding: 150px 0;
+   background-position: left center;
    z-index: 1;
    //animation: fadeIn 0.2s linear;
    > * {
@@ -23,10 +24,6 @@
 .section-subtitle {}
 
 // Page
-.page-home {
-  .section-header {
-    background-position: left center;
-  }
-}
+.page-home {}
 
 .page-about {}

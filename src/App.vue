@@ -4,10 +4,10 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-6 logo">
-        <router-link to="/" class="nav-item logo">Brian Z. O'Toole</router-link>
+      <div class="col-xs-3 start-xs logo">
+        <router-link to="/" class="nav-item logo">logo</router-link>
       </div><!--/.col-->
-      <div class="col-xs-6 end-xs">
+      <div class="col-xs-6 center-xs">
         <ul class="nav-primary">
           <li v-for="nav in navs">
             <router-link :to="`/${nav.link}`" class="nav-item">{{nav.title}}</router-link>
@@ -18,6 +18,9 @@
           <span class="line line-2"></span>
           <span class="line line-3"></span>
       </div><!--/.nav-toggle-->
+      </div><!--/.col-->
+      <div class="col-xs-3 end-xs hidden-phone">
+        <router-link to="" class="btn transparent">Get in Touch</router-link>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->

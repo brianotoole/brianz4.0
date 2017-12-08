@@ -67,6 +67,9 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
+   &.pos-left {
+    background-position: left center;
+   }
  }
  .has-overlay {
    &:before {
